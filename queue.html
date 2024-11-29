@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Queue in Js</title>
+  </head>
+  <body>
+    <script>
+      let queue = [];
+      let currentSize = queue.length;
+      let maxSize = 5;
+
+      function enque(newVal) {
+        if (currentSize >= maxSize) {
+          alert("queue is already full");
+        } else {
+          queue[currentSize] = newVal;
+
+          currentSize++;
+
+          console.log(queue);
+        }
+      }
+
+      function display() {
+        console.log(queue);
+      }
+
+      function deque (){
+        if(currentSize<=0){
+
+            alert("the queue is already empty")
+        }else{
+
+            for(let i=0;i<queue.length; i++){
+
+                queue[i]=queue[i+1]
+
+            }
+
+            currentSize--;
+            queue.length=currentSize;
+        }
+      }
+      enque(5);
+      enque(10)
+      display();
+    </script>
+  </body>
+</html>

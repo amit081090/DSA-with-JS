@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Even values fron Array make double of it and find array length manually</title>
+</head>
+<body>
+
+    <script>
+
+        let data=[2,4,6,8,10,12]
+        let evenArray=[]
+        let count=0;
+
+        for(let i=0;i<data.length;i++){
+
+            if(data[i]%2==0){
+                count++;
+                evenArray.push(data[i]*2)
+            }
+        }
+
+        console.log(count)
+        console.log(evenArray)
+
+
+    </script>
+    
+</body>
+</html>

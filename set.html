@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set DSA with Javascript</title>
+</head>
+<body>
+    <!-- //Set automatically removes the duplicate values// -->
+    <script>
+
+        let data= new Set(["amit","peter","amit"])
+
+        // data.add({"email":"test@test.com"})
+        // console.log(data.has("peter1"))
+        // data.delete("amit")
+        // console.log(data)
+        // for (x of data){
+        //     console.log(x)
+        // }
+
+        data.forEach((val)=>{
+            console.log(val)
+        })
+
+        console.log(data.entries())
+    </script>
+</body>
+</html>
